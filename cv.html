@@ -15,8 +15,23 @@
         h1, h2, h3 {
             font-family: system-ui;
         }
-        print-color-adjust: exact;
-        
+        .pdf-mode {
+            background: white !important;
+            color: black !important;
+        }
+
+        .pdf-mode .cv-container {
+            background: white !important;
+            color: black !important;
+        }
+
+        .pdf-mode * {
+            color: black !important;
+            border-color: #ddd !important;
+        }
+        .pdf-mode .bg-\[\#333\] {
+            background: #f5f5f5 !important;
+        }
         @media print {
             .no-print {
                 display: none !important;
@@ -154,15 +169,26 @@
     <script>
         function downloadPDF() {
             const element = document.getElementById('cv-content');
+
+            // 🔥 aktifkan mode PDF (light)
+            document.body.classList.add('pdf-mode');
+
             const opt = {
                 margin: 0.5,
                 filename: 'CV_Nurfauzi.pdf',
                 image: { type: 'jpeg', quality: 0.98 },
-                html2canvas: { scale: 2, useCORS: true, backgroundColor: '#ffffff' },
+                html2canvas: { 
+                    scale: 2,
+                    useCORS: true,
+                    backgroundColor: '#ffffff' // 🔥 paksa putih
+                },
                 jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
             };
-            
-            html2pdf().set(opt).from(element).save();
+
+            html2pdf().set(opt).from(element).save().then(() => {
+                // 🔄 balikin ke dark mode setelah download
+                document.body.classList.remove('pdf-mode');
+            });
         }
     </script>
 </body>
