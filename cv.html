@@ -170,8 +170,20 @@
         function downloadPDF() {
             const element = document.getElementById('cv-content');
 
-            // 🔥 aktifkan mode PDF (light)
-            document.body.classList.add('pdf-mode');
+            // 🔥 paksa semua jadi light (override inline)
+            element.style.background = "#ffffff";
+            element.style.color = "#000000";
+
+            // override semua child
+            element.querySelectorAll("*").forEach(el => {
+                el.style.color = "#000000";
+
+                // kalau ada background gelap → ubah
+                const bg = window.getComputedStyle(el).backgroundColor;
+                if (bg !== "rgba(0, 0, 0, 0)" && bg !== "transparent") {
+                    el.style.backgroundColor = "#ffffff";
+                }
+            });
 
             const opt = {
                 margin: 0.5,
@@ -180,14 +192,13 @@
                 html2canvas: { 
                     scale: 2,
                     useCORS: true,
-                    backgroundColor: '#ffffff' // 🔥 paksa putih
+                    backgroundColor: '#ffffff'
                 },
                 jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
             };
 
             html2pdf().set(opt).from(element).save().then(() => {
-                // 🔄 balikin ke dark mode setelah download
-                document.body.classList.remove('pdf-mode');
+                location.reload(); // 🔄 balikin ke dark normal
             });
         }
     </script>
