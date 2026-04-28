@@ -1,0 +1,65 @@
+# Fauzi Cihuyy - Desktop Developer
+
+## Site Description
+Personal portfolio and CV website for Fauzi Cihuyy, a Desktop Developer from Indonesia specializing in Microsoft Access, VBA, SQL Server, and system integration for business applications.
+
+## Domain
+https://fauzicihuyy.web.id
+
+## Key Pages
+
+### index.html (Landing Page)
+Main landing page showcasing:
+- Hero section with introduction
+- About section with experience and tech stack
+- Portfolio section with 4 featured projects (Petshop, POS, Konveksi, Pesantren)
+- FAQ section with common questions
+- Call-to-action section
+
+### cv.html (Curriculum Vitae)
+Professional CV page containing:
+- Personal information
+- Contact details (email, WhatsApp, LinkedIn)
+- Work experience
+- Education
+- Technical skills
+- Download PDF functionality
+
+## Services
+
+### Desktop Application Development
+- Microsoft Access database applications
+- VBA programming
+- SQL Server integration
+- RDP Server setup and management
+- System integration
+
+### Industry Specializations
+- Petshop management systems
+- Point of Sales (POS) systems
+- Production management (Konveksi/Garment)
+- Financial management (Pesantren/Islamic boarding schools)
+
+## Contact Information
+- Email: fauzithea3@gmail.com
+- WhatsApp: +62 882-1800-1749
+- LinkedIn: https://www.linkedin.com/in/fauzicihuyy/
+
+## Experience
+- 8+ years in desktop application development
+- 50+ completed projects
+- Specialized in business efficiency systems
+
+## Tech Stack
+- Microsoft Access
+- VBA (Visual Basic for Applications)
+- SQL Server
+- RDP Server
+- System Integration
+
+## Language
+Primary: Indonesian (Bahasa Indonesia)
+Secondary: English
+
+## Target Audience
+Business owners in Indonesia looking for desktop application solutions to improve operational efficiency.
