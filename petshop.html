@@ -20,6 +20,8 @@
     <meta property="og:url" content="https://fauzicihuyy.web.id/petshop.html">
     <meta property="og:type" content="article">
     <meta property="og:locale" content="id_ID">
+    <meta property="article:published_time" content="2024-04-29">
+    <meta property="article:modified_time" content="2026-05-15">
     
     <!-- Twitter Card Tags -->
     <meta name="twitter:card" content="summary_large_image">
@@ -48,6 +50,7 @@
         "@type": "Article",
         "headline": "Sistem Informasi Petshop - Pet ERP System",
         "description": "Aplikasi terintegrasi untuk manajemen petshop lengkap dengan stok, penjualan, layanan, dan laporan keuangan.",
+        "mainEntityOfPage": "https://fauzicihuyy.web.id/petshop.html",
         "image": "https://fauzicihuyy.web.id/petshop.webp",
         "author": {
             "@type": "Person",
@@ -58,7 +61,50 @@
             "name": "Fauzi Cihuyy - Desktop Developer"
         },
         "datePublished": "2024-04-29",
+        "dateModified": "2026-05-15",
+        "inLanguage": "id-ID",
+        "keywords": ["sistem petshop", "aplikasi petshop", "pet erp", "manajemen stok", "grooming", "klinik hewan"],
         "url": "https://fauzicihuyy.web.id/petshop.html"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Apakah sistem ini bisa mencatat produk dan layanan sekaligus?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Bisa. Sistem dirancang untuk mengelola penjualan produk retail sekaligus layanan seperti grooming, klinik, dan penitipan dalam satu database terintegrasi."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Bagaimana kontrol stok dilakukan?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Setiap transaksi otomatis memperbarui stok dan menyediakan notifikasi stok minimum agar pemilik petshop dapat melakukan pembelian ulang tepat waktu."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apakah bisa dipakai multi-user?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Bisa. Sistem mendukung multi-user dengan pembagian hak akses sesuai peran seperti owner, kasir, admin stok, dan staf layanan."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apakah laporan keuangan tersedia otomatis?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ya. Laporan penjualan dan ringkasan keuangan dapat dihasilkan otomatis untuk membantu monitoring performa harian dan bulanan."
+                }
+            }
+        ]
     }
     </script>
     
@@ -279,6 +325,59 @@
                 <span class="bg-blue-500/20 text-blue-300 px-6 py-3 rounded-full text-lg">MySQL</span>
                 <span class="bg-blue-500/20 text-blue-300 px-6 py-3 rounded-full text-lg">SQL Server</span>
                 <span class="bg-blue-500/20 text-blue-300 px-6 py-3 rounded-full text-lg">RDP Server</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Artikel Implementasi Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-black border-t border-slate-800">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl lg:text-4xl font-bold mb-6 text-center">Implementasi Sistem Petshop</h2>
+            <p class="text-lg text-gray-300 leading-relaxed mb-10 text-center max-w-4xl mx-auto">
+                Banyak petshop tumbuh cepat tetapi operasionalnya masih terpisah antara kasir, catatan stok, dan layanan. Sistem ini dibuat untuk menyatukan seluruh proses agar keputusan bisnis bisa diambil berdasarkan data yang konsisten.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <article class="bg-dark-card rounded-xl p-6 border border-slate-800">
+                    <h3 class="text-xl font-semibold mb-3">Masalah yang Umum Terjadi</h3>
+                    <p class="text-gray-400">Data pelanggan dan hewan sering tercecer, stok sulit dipantau real-time, dan laporan akhir bulan memerlukan rekap manual yang memakan waktu.</p>
+                </article>
+                <article class="bg-dark-card rounded-xl p-6 border border-slate-800">
+                    <h3 class="text-xl font-semibold mb-3">Solusi yang Diterapkan</h3>
+                    <p class="text-gray-400">Modul penjualan, grooming, klinik, penitipan, dan keuangan disatukan dalam satu alur kerja sehingga pencatatan lebih rapi dan minim duplikasi input.</p>
+                </article>
+                <article class="bg-dark-card rounded-xl p-6 border border-slate-800">
+                    <h3 class="text-xl font-semibold mb-3">Dampak Operasional</h3>
+                    <p class="text-gray-400">Pemilik usaha bisa memantau performa layanan dan margin produk lebih cepat, serta menekan kesalahan input melalui proses yang terstandar.</p>
+                </article>
+                <article class="bg-dark-card rounded-xl p-6 border border-slate-800">
+                    <h3 class="text-xl font-semibold mb-3">Pendekatan Implementasi</h3>
+                    <p class="text-gray-400">Implementasi dilakukan bertahap: analisa kebutuhan, setup database, pelatihan user, lalu monitoring pasca go-live agar tim dapat beradaptasi dengan lancar.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-black border-t border-slate-800">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl lg:text-4xl font-bold mb-10 text-center">FAQ Sistem Petshop</h2>
+            <div class="space-y-4">
+                <article class="bg-dark-card rounded-xl p-6 border border-slate-800"><h3 class="text-lg font-semibold mb-2">Apakah sistem cocok untuk petshop kecil?</h3><p class="text-gray-400">Cocok. Modul dapat dipakai bertahap mulai dari kasir dan stok, kemudian ditambah layanan lain saat operasional berkembang.</p></article>
+                <article class="bg-dark-card rounded-xl p-6 border border-slate-800"><h3 class="text-lg font-semibold mb-2">Bisakah data pelanggan dilacak per riwayat layanan?</h3><p class="text-gray-400">Bisa. Riwayat transaksi dan layanan hewan dapat dilihat kembali untuk kebutuhan follow-up dan peningkatan kualitas layanan.</p></article>
+                <article class="bg-dark-card rounded-xl p-6 border border-slate-800"><h3 class="text-lg font-semibold mb-2">Apakah tersedia dukungan setelah implementasi?</h3><p class="text-gray-400">Ya, tersedia support untuk maintenance, evaluasi penggunaan, dan penyesuaian fitur sesuai kebutuhan operasional.</p></article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Solutions Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-black border-t border-slate-800">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-2xl lg:text-3xl font-bold mb-6">Solusi Terkait</h2>
+            <div class="flex flex-wrap justify-center gap-3">
+                <a href="pos.html" class="bg-dark-card border border-slate-800 rounded-lg px-4 py-2 text-gray-300 hover:text-white">Sistem POS Retail</a>
+                <a href="konveksi.html" class="bg-dark-card border border-slate-800 rounded-lg px-4 py-2 text-gray-300 hover:text-white">Sistem Produksi Konveksi</a>
+                <a href="pesantren.html" class="bg-dark-card border border-slate-800 rounded-lg px-4 py-2 text-gray-300 hover:text-white">Sistem Keuangan Pesantren</a>
+                <a href="cv.html" class="bg-dark-card border border-slate-800 rounded-lg px-4 py-2 text-gray-300 hover:text-white">Profil Developer</a>
             </div>
         </div>
     </section>
